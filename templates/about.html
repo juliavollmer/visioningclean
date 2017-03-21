@@ -1,0 +1,51 @@
+{% extends "layout.html" %}
+{% block bodycontent %}
+				<h1>About</h1>
+				<p> Project for Technical Basics 2, winter semester 2016/2017, Leuphana University </p>
+        <h2 id="idea">Idea</h2>
+        <p>As many people before me, I’m interested in the ways in which music can be translated into a visual output.
+				My art teacher back in high school would always let us draw to music and while all our results were pretty abstract and wild,
+				they shared similarities in the way they represented the rhythm and overall mood of the song.
+				This inspired me for my project and research.</p>
+
+        <h2 id="process">Process</h2>
+        <p>Working on this project gave me whole new perspective on the way programming can be used.
+				I struggled with the implementation and the different packages for Python.
+				With another programming language, I believe the output would have been better, but I wanted approach the topic with Python.
+				PROGRESS: [||||||_]</p>
+				<p>&#10004;	The length of the music file determines the size of the final image</p>
+				<p>&#10004;	Chords determine the color of the objects ^1</p>
+				<p>&#10004;	Major and minor determine the object (soft/sharp)</p>
+				<p>&#10004;	A random value is incorporated to make a different image each time</p>
+				<p>&#10004;	Beats can be seen</p>
+				<p>&#10004; Tempo determines the clearness of the image</p>
+				<p><u>Comparison</u></p>
+				<p>To be able to understand how others interpret songs, I asked several friends to draw an image based on their song choice.
+				With multiple versions of my program I tried to somehow come closer to an image that others could relate to.
+				The images can be seen here:   <a href="/galleryt#comparison">Comparison</a>
+				It is also interesting to notice that despite various changes in the arrangement, the colour scheme for the songs stay the same.
+				This shows how my program is able to analyze the music files.</p>
+				<p><u>Encountered Problems</u></p>
+				<p>The code relies heavenly on a number of different packagies and the dependency is quite high.
+					At the current level of my skills, I could not solve this issue.
+					Furthermore even though I tried multiple hosts for Flask apps over a couple of weeks and spend hours to get my app online,
+					only the website itself not the music into image code. This was largely due to the fact that a proper filesystem was missing and there are not many clear tutorials online.
+					Even with Amazon S3 I could not save files.
+					I still believe my project was a success, because it works fine on a localhost.</p>
+
+				<h2 id="research">Research</h2>
+        <p>In my project I want to connect music with images. Music in itself is not visual, but there are many tendencies to combine music with an image. Be it music videos, movies or paintings.
+As early as the 18th century people were already experimenting with color organs. Every key on the organ would correlate to a color.
+During the research the term ‘visual music’ came up. The term itself was first used in 1912 in order to describe paintings of Wassily Kandinsky, whose paintings were heavily influenced by music. Kandinksy tried to translate music into painting and create an experience similar to the experience of music. Abstract color patterns should evoke the impression of sound. Starting from the late 1920s people would experiment with moving images and make animations according to music. One prominent filmmaker in the field of abstract cinema was Oskar Fischinger (see https://youtu.be/they7m6YePo ). He would use abstract imagery to create music analogies. For example the appearance of a pattern would match the rhythm of the music. Another artist who focused more on ‘composing motion’ was Len Lye (see https://youtu.be/-DksmbDMDUU ).
+Nowadays with the help of computers the visual representation is often used in digital music players and live shows that feature light shows and other visual effects.</p>
+				<p></p>
+				<h2>Resources</h2>
+				<p>
+					1. <a href="http://www.flutopedia.com/sound_color.htm">Color Chart developed by Nicholas Melendez and Clint Goss</a>
+</p><p>2. <a href="http://vladimirtamari.com/visualmusichistory.html">History Visual Music</a>
+</p><p>3. <a href="http://www.fluctuating-images.de/files/images/pdf/Visual_Music_engl.pdf">Visual Music</a>
+</p><p>4. <a href="http://www.mat.ucsb.edu/~wakefield/amv/visualmusic.htm">Visual Music #2</a>
+</p><p>5. <a href="http://homepage.eircom.net/~musima/visualmusic/visualmusic.htm">Visual Music #3</a>
+				</p>
+
+{% endblock %}

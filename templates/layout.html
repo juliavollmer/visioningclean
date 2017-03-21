@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+  <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='style.css') }}">
+  <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Open+Sans|Nunito|Quicksand" rel="stylesheet">
+  <title>Visioning</title>
+</head>
+<body>
+  <left>
+  <nav><ul>
+  <li><a href="/upload">Upload</a></li>
+  <li><a href="/gallery">Gallery</a></li>
+  <li class="dropdown">
+    <a href="/about" class="dropbtn">About</a>
+    <div class="dropdown-content">
+      <a href="/about#idea">Idea</a>
+      <a href="/about#process">Process</a>
+      <a href="/about#research">Research</a>
+    </div>
+  </li>
+</ul>
+</nav></left>
+<project><h1>Final Project</h1>
+  <p>This project is done for my course at the Leuphana. More information is provided under 'About'.</p>
+<hr><p>Combining music and art.</p><hr><hr><p>Julia Vollmer 2017</p></project>
+<img class="header" src="./static/header4.png">
+  <div>
+
+  {% block bodycontent %}
+  <p>Empty</p>
+  {% endblock %}
+</div>
+  <img class="footer" src="./static/footer3.png">
+</body>
+</html>
